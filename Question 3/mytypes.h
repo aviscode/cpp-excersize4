@@ -2,7 +2,7 @@
 File: mytypes.h
 Description: This is the header file with privet definition.
 Course: 150018 C++ Workshop,
-Exercise 4, Question 1
+Exercise 4, Question 2
 Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
 */
 

@@ -1,3 +1,11 @@
+/*
+File: string.cpp
+Description: This is the string.cpp file.
+Course: 150018 C++ Workshop,
+Exercise 4, Question 1
+Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
+*/
+
 #include <cstring>
 #include "string.h"
 
@@ -152,13 +160,26 @@ bool String::operator !=(const String& rhs)const {
 		return true;
 }
 
-int& String::operator[](const cstring index) {
+int& String::operator[](const cstring contained) {
+	bool flag = false;
 	for (int i = 0; i < length(); ++i) {
-		return i;
-
+		if (_str[i] == contained[0]) {
+			uint k = i;
+			flag = true;
+			for (uint j = 0; contained[j] != '\0'; ++j, ++k) {
+				if (_str[k] != contained[j])
+					flag = false;
+				break;
+			}
+		}
+		if (flag) {
+			delete[]contained;
+			return i;
+		}
 	}
+	if (!flag)
+		throw contained;
 }
-
 
 ostream& operator <<(ostream& out, const String& rhs) {
 	out << *rhs._str;

@@ -1,3 +1,11 @@
+/*
+File: string.h
+Description: This is the header file of string.cpp.
+Course: 150018 C++ Workshop,
+Exercise 4, Question 1
+Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
+*/
+
 #ifndef __ String_H
 #define __ String_H
 
@@ -12,7 +20,7 @@ private:
 	char * _str;                      // Internal data container - for dynamic c- String
 	void setString(const char* s);   // Modifier - for internal usage
 public:
-	// con _structors
+	// constructors
 	String(const char* s = nullptr); // Default and from c- String
 	String(const  String& s);         // Copy ctor
 	String(String&& s);              // Move ctor
@@ -28,12 +36,14 @@ public:
 	friend String operator + (String, const  String&); // Symmetric addition as friend
 	String& operator *= (uint);     // Multiplication by replicating
 	friend String operator * (String, uint);  // Symmetric multiplication as friend
+	int& operator[](cstring contained);
+
 	bool operator <(const String&)const;
 	bool operator >(const String&)const;
 	bool operator <=(const String&)const;
 	bool operator >=(const String&)const;
 	bool operator !=(const String&)const;
-	int& operator[](cstring index);
+
 	friend ostream& operator <<(ostream& out, const String&);
 	friend istream& operator >>(istream& in, String&);
 
@@ -44,6 +54,6 @@ public:
 };
 
 String operator + (String, const  String&); // Declaration of addition operator (global)
-String operator * (String, unsigned int);  // Declaration of mulitiplication oeprator (global)
+String operator * (String, uint);  // Declaration of mulitiplication oeprator (global)
 
 #endif // __ String_H

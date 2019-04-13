@@ -1,8 +1,8 @@
 /*
-File: INDEXEXCPTION .h
-Description: This is the header file with a ERROR struct .
+File: INDEXEXCPTION.h
+Description: This is the header file of ERROR struct.
 Course: 150018 C++ Workshop,
-Exercise 4, Question 1
+Exercise 4, Question 2
 Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
 */
 
