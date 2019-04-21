@@ -1,8 +1,17 @@
+/*
+File: Clock.h
+Description: This is the Clock.h file .
+Course: 150018 C++ Workshop,
+Exercise 4, Question 3
+Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
+*/
+
 #ifndef _CLOCK_H_
 #define _CLOCK_H_
 
 #include"mytypes.h"
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 class Clock {
@@ -12,7 +21,6 @@ private:
 	uint _second;
 public:
 	Clock(uint hour = 0, uint minute = 0, uint second = 0);
-	~Clock();
 
 	//get and set the values for time.
 	uint getHour();

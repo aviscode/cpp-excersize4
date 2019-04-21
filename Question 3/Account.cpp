@@ -1,8 +1,19 @@
+/*
+File: Account.cpp
+Description: This is the Account.cpp flie.
+Course: 150018 C++ Workshop,
+Exercise 4, Question 3
+Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
+*/
+
 #include "Account.h"
 
+
+//static variable first reset to 0.
 uint Account::_sumWithdraw = 0;
 uint Account::_sumDeposit = 0;
 
+//constractor
 Account::Account(uint accountNumber, uint code, int balance) {
 	_accountNumber = accountNumber;
 	_code = code;

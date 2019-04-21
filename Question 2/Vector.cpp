@@ -17,12 +17,14 @@ Vector::~Vector() {
 	_data = nullptr;
 }
 
+//assignment
 Vector::Vector(const Vector& other) {
 	_size = other._size;
 	_capacity = other._capacity;
 	_data = other.getData();
 }
 
+//move 
 Vector::Vector(Vector&& other) :_data(other._data), _capacity(other._capacity), _size(other._size) {
 	other._data = nullptr;
 	other._capacity = 0;
@@ -31,9 +33,8 @@ Vector::Vector(Vector&& other) :_data(other._data), _capacity(other._capacity), 
 
 //operators
 // Copy Assignment operator.
-
 Vector& Vector::operator = (const  Vector& rhs) {
-	if (this == &rhs)return *this;
+	if (this == &rhs)return *this;		//if eqals 
 	if (_capacity != rhs._capacity)
 		_capacity = rhs._capacity;
 	if (_size != rhs._size) {
@@ -72,6 +73,7 @@ bool Vector::operator ==(const Vector& rhs)const {
 	return true;
 }
 
+//out<< poerator 
 ostream& operator <<(ostream& out, const Vector& rhs) {
 	out << "capacity : " << rhs._capacity << " size : " << rhs._size << " content : ";
 	for (uint i = 0; i < rhs._size; ++i)
@@ -80,7 +82,7 @@ ostream& operator <<(ostream& out, const Vector& rhs) {
 	return out;
 }
 
-
+//index operator get 
 const int& Vector::operator[](int index) const
 {
 	if (index > _size - 1)
@@ -91,6 +93,7 @@ const int& Vector::operator[](int index) const
 	return _data[index];
 }
 
+//index operator set 
 int& Vector::operator[](int index) {
 	if (index > _size - 1) {
 		IndexException *temp = new IndexException(index, _size - 1);
@@ -99,6 +102,7 @@ int& Vector::operator[](int index) {
 	return _data[index];
 }
 
+//mult operator
 int* Vector::operator * (const Vector&rhs)const {
 	if (_size != rhs._size) {
 		IndexException *temp = new IndexException(_size, rhs._size);
@@ -109,7 +113,7 @@ int* Vector::operator * (const Vector&rhs)const {
 		tempSum[i] = _data[i] * rhs._data[i];
 	return tempSum;
 }
-
+//add operator.
 Vector operator + (const Vector& lhs, const Vector& rhs) {
 	Vector temp(lhs._capacity + rhs._capacity);
 	temp._size = (lhs._size + rhs._size);
@@ -134,6 +138,7 @@ void Vector::setSize(const uint size) {
 	_size = size;
 }
 
+//dalete last value in a vector function
 void Vector::delLast() {
 	if (!_size)throw 0;
 	_data[--_size] = {};
@@ -148,11 +153,13 @@ int *Vector::getData() const {
 	return temp;
 }
 
+//clear data of a vector function 
 void Vector::clear() {
-	_data = {};
+	*_data = {};
 	_size = 0;
 }
 
+//insert a value in the vector if there if plase
 void Vector::insert(int val) {
 	if (_size == _capacity) throw _capacity; // if the array is full
 	_data[_size++] = val;

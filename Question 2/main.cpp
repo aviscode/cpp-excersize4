@@ -18,7 +18,7 @@ enum MenuOption
 	INPUT_TO_VECTOR,
 	CHECK_EQUALITY,
 	PRINT_MULT_OF_TOW_FIRST_VECTORS,
-	POSTING_FIRST_VECTOR_IN_THE_SECOND,
+	POSTING_FIRST_VECTOR_IN_THE_THIRD,
 	POSTING_SUM_OF_TOW_VECTORS_IN_THE_THIRD,
 	CLEAR_CONTENT_OF_VECTOR,
 	DELETE_LAST_PLACE_IN_VECTOR,
@@ -46,7 +46,7 @@ const char * const menuOptionStrings[] =
 // It prints menu and performs the action according to the chosen option.
 int main(void)
 {
-	Vector v1(9), v2(9), v3;
+	Vector v1(9), v2(9), v3;  //set 3 vectors
 	MenuOption chosen;
 
 	do {
@@ -73,18 +73,18 @@ int main(void)
 			// adios
 			cout << "Thanx for using Vectors Management Program !" << endl;
 			break;
-		case INPUT_TO_VECTOR: {
+		case INPUT_TO_VECTOR: {		//case set values
 			int size, value;
 			cout << "Please select which vector to enter values : (1 OR 2)\n";
 			cin >> chosenV;
-			while (chosenV != 1 && chosenV != 2) {
+			while (chosenV != 1 && chosenV != 2) {		//gets vctor 1 or 2 
 				cout << "ERROR Enter 1 OR 2\n";
 				cin >> chosenV;
 			}
 			if (chosenV == 1) {
 				cout << "How many values do you want to insert into the vector ? (smaller than " << v1.getCapacity() << ") :";
 				cin >> size;
-				while (v1.getCapacity() < size) {
+				while (v1.getCapacity() < size) {		//gets the size of the vector
 					cout << "ERROR the size is too big \n";
 					cin >> size;
 				}
@@ -96,7 +96,7 @@ int main(void)
 			else {
 				cout << "How many values do you want to insert into the vector ? (smaller than " << v2.getCapacity() << ") : ";
 				cin >> size;
-				while (v2.getCapacity() < size) {
+				while (v2.getCapacity() < size) {		//gets the size of the vector
 					cout << "ERROR the size is too big \n";
 					cin >> size;
 				}
@@ -107,16 +107,16 @@ int main(void)
 			}
 			break;
 		}
-		case CHECK_EQUALITY:
+		case CHECK_EQUALITY:		//case checkig if 2 vectors eqals
 			if (v1 == v2)
-				cout << "vector v1 in eqal to vectoe v2\n";
+				cout << "vector v1 is eqal to vectoe v2\n";
 			else
-				cout << "vector v1 in not eqal to vector v2\n";
+				cout << "vector v1 is not eqal to vector v2\n";
 			break;
 		case PRINT_MULT_OF_TOW_FIRST_VECTORS:
 			try {
 				int*sum = v1 * v2;
-				for (uint i = 0; i < v1.getSize() + v2.getSize(); ++i)
+				for (uint i = 0; i < v1.getSize(); ++i)
 					cout << sum[i] << " ";
 				cout << endl;
 				delete[]sum;
@@ -125,15 +125,15 @@ int main(void)
 				cout << "The size of v1 : " << temp->index << " is not eqal to size of v2 the size of v2  : " << temp->maxIndex << ")\n";
 			}
 			break;
-		case POSTING_FIRST_VECTOR_IN_THE_SECOND:
+		case POSTING_FIRST_VECTOR_IN_THE_THIRD:		//copying the first vectoe in the third vector	
 			v3 = v1;
 			cout << v3;
 			break;
-		case POSTING_SUM_OF_TOW_VECTORS_IN_THE_THIRD:
+		case POSTING_SUM_OF_TOW_VECTORS_IN_THE_THIRD:		//seting the sum of 2 vectors in the third vector
 			v3 = v1 + v2;
 			cout << v3;
 			break;
-		case CLEAR_CONTENT_OF_VECTOR:
+		case CLEAR_CONTENT_OF_VECTOR:		//clear a vector 
 			cout << "Please select which vector you will like clear : (1 OR 2)\n";
 			cin >> chosenV;
 			while (chosenV != 1 && chosenV != 2)
@@ -151,10 +151,10 @@ int main(void)
 			}
 
 			break;
-		case DELETE_LAST_PLACE_IN_VECTOR: {
+		case DELETE_LAST_PLACE_IN_VECTOR: {		//delete a last value in a vector
 			cout << "Please select which vector you will like to delete the last value : (1 OR 2)\n";
 			cin >> chosenV;
-			while (chosenV != 1 && chosenV != 2)
+			while (chosenV != 1 && chosenV != 2)		//gets the size of the vector
 			{
 				cout << "ERROR Enter 1 OR 2\n";
 				cin >> chosenV;
@@ -179,7 +179,7 @@ int main(void)
 			}
 			break;
 		}
-		case PRINT_ALL_VECTORS:
+		case PRINT_ALL_VECTORS:		//case of printing all vectors
 			cout << v1;
 			cout << v2;
 			cout << v3;

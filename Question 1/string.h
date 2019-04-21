@@ -29,7 +29,7 @@ public:
 	char* getString() const;         // Viewer
 
 	// Operators
-	String& operator = (const  String&);     // Copy Assignment
+	String& operator = (const  String&);    // Copy Assignment
 	String& operator = (String&&);          // Move Assignment
 	bool operator == (const String&) const; // Equality
 	String& operator += (const String&);    // Addition to object by concatenation

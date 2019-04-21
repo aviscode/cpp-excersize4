@@ -1,3 +1,11 @@
+/*
+File: Account.h
+Description: This is the Account.h flie.
+Course: 150018 C++ Workshop,
+Exercise 4, Question 3
+Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
+*/
+
 #ifndef _ACCOUNT_H_
 #define _ACCOUNT_H_
 
@@ -11,8 +19,8 @@ private:
 	uint _accountNumber;
 	uint _code;
 	float _balance;
-	static uint _sumWithdraw;
-	static uint _sumDeposit;
+	static uint _sumWithdraw;	//static uint for the class
+	static uint _sumDeposit;	//static uint for the class
 public:
 	// constructor
 	Account(uint accountNumber = 0, uint code = 0, int balance = 0);

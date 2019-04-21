@@ -1,0 +1,74 @@
+
+Menu options:
+
+           0 -- exit
+           1 -- intput to 2 words to 2 instance of the class
+           2 -- compare 2  instance
+           3 -- enter an index from which, the second instance word  will be inserted after first instance word
+           4 -- search if the second instance word contained in the first instance word
+
+Please choose a menu option: 1
+enter two words for the first an second instance:
+saba
+aba
+saba
+aba
+
+Menu options:
+
+           0 -- exit
+           1 -- intput to 2 words to 2 instance of the class
+           2 -- compare 2  instance
+           3 -- enter an index from which, the second instance word  will be inserted after first instance word
+           4 -- search if the second instance word contained in the first instance word
+
+Please choose a menu option: 2
+a > b
+
+Menu options:
+
+           0 -- exit
+           1 -- intput to 2 words to 2 instance of the class
+           2 -- compare 2  instance
+           3 -- enter an index from which, the second instance word  will be inserted after first instance word
+           4 -- search if the second instance word contained in the first instance word
+
+Please choose a menu option: 3
+enter a index from which the word will be spelled after the existing word
+2
+saababa
+absabaa
+
+Menu options:
+
+           0 -- exit
+           1 -- intput to 2 words to 2 instance of the class
+           2 -- compare 2  instance
+           3 -- enter an index from which, the second instance word  will be inserted after first instance word
+           4 -- search if the second instance word contained in the first instance word
+
+Please choose a menu option: 4
+The word: aba
+was found inside: saba
+from index : 1
+
+Menu options:
+
+           0 -- exit
+           1 -- intput to 2 words to 2 instance of the class
+           2 -- compare 2  instance
+           3 -- enter an index from which, the second instance word  will be inserted after first instance word
+           4 -- search if the second instance word contained in the first instance word
+
+Please choose a menu option: 5
+
+Menu options:
+
+           0 -- exit
+           1 -- intput to 2 words to 2 instance of the class
+           2 -- compare 2  instance
+           3 -- enter an index from which, the second instance word  will be inserted after first instance word
+           4 -- search if the second instance word contained in the first instance word
+
+Please choose a menu option: 0
+Press any key to continue . . .

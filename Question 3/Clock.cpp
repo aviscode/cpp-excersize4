@@ -1,5 +1,14 @@
+/*
+File: Clock.cpp
+Description: This is the Clock.cpp file .
+Course: 150018 C++ Workshop,
+Exercise 4, Question 3
+Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
+*/
+
 #include "Clock.h"
 
+//constractor
 Clock::Clock(const uint hour, const uint minute, const uint second) : _hour(0), _minute(0), _second(0) {
 	if (hour > 23 || hour < 0)
 		_hour = 0, _minute = 0, _second = 0;
@@ -12,10 +21,6 @@ Clock::Clock(const uint hour, const uint minute, const uint second) : _hour(0), 
 		_minute = minute;
 		_second = second;
 	}
-}
-
-Clock::~Clock() {
-
 }
 
 //get and set valus in the time fileds.
@@ -62,7 +67,7 @@ Clock& Clock::operator +=(uint second) {
 	_second = (_second + second) % 60;
 	return *this;
 }
-
+// ++ second function
 Clock& Clock::operator ++() {
 	if (++_second == 60) {
 		_second = 0;
@@ -75,28 +80,22 @@ Clock& Clock::operator ++() {
 	return *this;
 }
 
+//second++ function
 Clock Clock::operator ++(int) {
 	Clock temp = *this;
 	++(*this);
 	return temp;
 }
 
+//out << operator 
 ostream& operator <<(ostream& out, const Clock& time) {
-	if (time._hour < 10)
-		out << "0" << time._hour << ":";
-	else
-		out << time._hour << ":";
-	if (time._minute < 10)
-		out << "0" << time._minute << ":";
-	else
-		out << time._minute << ":";
-	if (time._second < 10)
-		out << "0" << time._second;
-	else
-		out << time._second;
+	out << setfill('0') << setw(2) << time._hour << ":";
+	out << setfill('0') << setw(2) << time._minute << ":";
+	out << setfill('0') << setw(2) << time._second;
 	return out;
 }
 
+//in >> operator 
 istream& operator >>(istream& in, Clock& time) {
 	in >> time._hour >> time._minute >> time._second;
 	if (time._hour > 23) {

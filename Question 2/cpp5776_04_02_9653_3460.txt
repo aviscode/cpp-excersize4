@@ -1,0 +1,214 @@
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 1
+Please select which vector to enter values : (1 OR 2)
+1
+How many values do you want to insert into the vector ? (smaller than 9) :5
+Enter the values
+1 2 3 4 5
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 1
+Please select which vector to enter values : (1 OR 2)
+2
+How many values do you want to insert into the vector ? (smaller than 9) : 5
+Enter the values
+1 2 3 4 5
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 2
+vector v1 is eqal to vectoe v2
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 3
+1 4 9 16 25
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 4
+capacity : 9 size : 5 content : 1 2 3 4 5
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 5
+capacity : 18 size : 10 content : 1 2 3 4 5 1 2 3 4 5
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 6
+Please select which vector you will like clear : (1 OR 2)
+1
+capacity : 9 size : 0 content :
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 8
+capacity : 9 size : 0 content :
+capacity : 9 size : 5 content : 1 2 3 4 5
+capacity : 18 size : 10 content : 1 2 3 4 5 1 2 3 4 5
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 7
+Please select which vector you will like to delete the last value : (1 OR 2)
+2
+capacity : 9 size : 4 content : 1 2 3 4
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 8
+capacity : 9 size : 0 content :
+capacity : 9 size : 4 content : 1 2 3 4
+capacity : 18 size : 10 content : 1 2 3 4 5 1 2 3 4 5
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 6
+Please select which vector you will like clear : (1 OR 2)
+2
+capacity : 9 size : 0 content :
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option: 8
+capacity : 9 size : 0 content :
+capacity : 9 size : 0 content :
+capacity : 18 size : 10 content : 1 2 3 4 5 1 2 3 4 5
+
+Menu options:
+
+          0 -- Exit the program
+          1 -- Input content to a vector
+          2 -- Check if the first vector equal to second
+          3 -- Print the mult of the first vector whit the second
+          4 -- Posting the first vector in the third
+          5 -- Posting the sum of tow vectors in the third
+          6 -- Clear the contsnt of the vector. (1 or 2)
+          7 -- Delete the last place from the vector (1 or 2)
+          8 -- Print all vectors
+
+Please choose a menu option:

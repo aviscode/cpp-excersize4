@@ -7,7 +7,9 @@ Author: Avrumi Rosenberg ID:208509653 == zevi abramovich id 313583460
 */
 
 #include <cstring>
+#include <stdio.h>
 #include "string.h"
+
 
 // C- String based Con _structor (CTOR)
 String::String(const char* s) : _str(nullptr) {       // initialize the fields
@@ -188,11 +190,22 @@ ostream& operator <<(ostream& out, const String& rhs) {
 
 istream& operator >>(istream& in, String& rhs) {
 	delete[]rhs._str;
-	char *temp1 = new char[100];
-	in >> temp1;
-	rhs._str = new char[strlen(temp1) + 1];
-	strcpy(rhs._str, temp1);
-	delete[]temp1;
+	char temp;
+	uint i = 0, size = 5;
+	char *arr = new char[size] {};
+	temp = in.get();
+	while (temp != '\n') {
+		arr[i++] = temp;
+		if (i == size - 1) {
+			char*tempArr = new char[size += 5]{};
+			strcpy(tempArr, arr);
+			delete[]arr;
+			arr = tempArr;
+		}
+		temp = in.get();
+	}
+	arr[i] = '\0';
+	rhs._str = arr;
 	return in;
 }
 
